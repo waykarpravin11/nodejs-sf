@@ -14,8 +14,8 @@ app.post('/insert', function(req, res) {
         // watch for any connect issues
         if (err) console.log(err);
         conn.query(
-            'INSERT INTO salesforce.Personal_Information__c Phone__c = $1, Email__c=$4,First_Name__c=$2,Last_Name__c=$3',
-            [req.body.phone.trim(), req.body.firstName.trim(), req.body.lastName.trim(), req.body.email.trim()],
+           // 'INSERT INTO salesforce.Personal_Information__c Phone__c = $1, Email__c=$4,First_Name__c=$2,Last_Name__c=$3',
+           // [req.body.phone.trim(), req.body.firstName.trim(), req.body.lastName.trim(), req.body.email.trim()],
             function(err, result) {
                 if (err != null || result.rowCount == 0) {
                   conn.query('INSERT INTO salesforce.Personal_Information__c  (Phone__c, First_Name__c, Last_Name__c,Email__c) VALUES ($1, $2, $3, $4)',
