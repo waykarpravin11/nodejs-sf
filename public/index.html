@@ -74,6 +74,7 @@
         </div>
     </nav>
 
+<div class="container">
 <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
   New
 </button>
@@ -81,7 +82,7 @@
 <div class="modal fade" tabindex="-1" role="dialog" id="myModal">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
-        <div class="container">
+
             <form id="phoneChangerForm" action="/insert" method="post" style="width: 400px">
                 <div class="panel panel-default">
                     <div class="panel-heading">
@@ -90,19 +91,19 @@
                     <div class="panel-body">
                         <div class="form-group">
                             <label for="firstName">First Name</label>
-                            <input type="text" class="form-control" id="firstName" placeholder="For verification" required>
+                            <input type="text" class="form-control" id="firstName" placeholder="First Name" required>
                         </div>
                         <div class="form-group">
                             <label for="lastName">Last Name</label>
-                            <input type="text" class="form-control" id="lastName" placeholder="For verification" required>
+                            <input type="text" class="form-control" id="lastName" placeholder="Last Name" required>
                         </div>
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="email" class="form-control" id="email" placeholder="For verification" required>
+                            <input type="email" class="form-control" id="email" placeholder="Email" required>
                         </div>
                         <div class="form-group">
                             <label for="phone">Phone</label>
-                            <input type="tel" class="form-control" id="phone" placeholder="New Phone Number" required>
+                            <input type="tel" class="form-control" id="phone" placeholder="Phone" required>
                         </div>
                     </div>
                     <div class="panel-footer">
